@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "images/bg/bg2.jpg",
+            "images/bg/bg1.jpg",
+            "images/bg/bg4.jpg"
+	    ], {duration: 4350, fade: 500, centeredY: true });
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{ 	
+              	latitude:45.557937,
+				longitude: 18.709186,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: { 
+              	image: "images/marker.png", 
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+         	latitude:45.557937,
+         	longitude: 18.709186,
+          	zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                 <a class="navbar-brand" href="index.html"><h1>NIKO JUKIC</h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o-meni.html">O Meni</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="kontaktiraj-me.html">Kontakt</a></li> 
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1 fade-down">NIKO JUKIC</h2>
+                                    <br>
+                                    <a class="btn btn-md animation bounce-in" href="o-meni.html">Pogledaj Više</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="about-us" class="white">
+        	<div class="container">
+	            <div class="gap"></div>
+	            <div class="row">
+	                <div>
+	                    <div class="center gap fade-down section-heading">
+	                        <h2 class="main-title">O MENI</h2>
+	                        <hr>
+	                    </div>                
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-md-10 col-md-offset-1 fade-up">
+	                    <p>Moje ime je Niko, rođen sam u 15.02.2004. godine u Osijeku, mirnom gradu uz rijeku Dravu. Pohađam Isusovačku klasičnu gimnaziju u Osijeku. Nisam baš zaljubljen u većinu predmeta, ali nadam se da ću nakon te škole upisati neki fakultet koji će me voditi ka mojoj jedinoj, pravoj ljubavi- informatici i računalima. Prošle godine upisao sam se u školu informatike, managementa i stranih jezika na tečaj web-dizajna. To mi je otvorilo neke nove vidike, ali i pokazalo koliko moram učiti i biti uporan. Naučio sam sljedeće programske jezike: HTML, CSS, PHP, Java, JavaScript i jQuery, također sam se služio sa Photoshopom i naučio neke osnove u njemu. Web-dizajn mi se jako svidio i mislim se nastaviti baviti njime i nastaviti sa svojim napredovanjem.</p>
+
+	                    <p>U slobodno vrijeme družim se s prijateljima, vozim bicikl i skateboard, slušam glazbu i igram igrice na računalu. Većina mojih prijatelja ima iste afinitete te se lako razumijemo. Nisam pretjerani fan društvenih mreža, iako imam profile na Facebooku i  Instagramu. Možda nije najpametnije, ali u virtualnom svijetu mogu "izgubiti" sate i sate igrajući igrice umrežen s igračima diljem svijeta. Najviše volim zimu i skijanje. Već godinama pohađam napredne tečajeve skijanja i uživam u crvenim i crnim stazama. Do sada sam obišao 10-ak različitih skijališta u Francuskoj, Austriji, Italiji, Sloveniji i Švicarskoj. Skateboard mi je druga sportska ljubav. </p>
+	                </div>
+	            </div>
+            </div>      
+        </section>
+        <section id="portfolio" class="white">
+       		<div class="container">
+	        	<div class="gap"></div> 
+		        	<div class="center gap fade-down section-heading">
+		                <h2 class="main-title">Galerija</h2>
+		                <hr>
+		            </div> 
+                    <ul class="portfolio-items col-3 isotope fade-up">
+                        <li class="portfolio-item apps isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio1.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item joomla nature isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio2.jpeg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio2.jpeg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>          
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item bootstrap design isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio3.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item joomla design apps isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio4.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>         
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item joomla apps isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio5.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>   
+                            </div>       
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item wordpress nature isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio6.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>           
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item joomla design apps isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio07.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>          
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item joomla nature isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio08.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>  
+                            </div>       
+                        </li><!--/.portfolio-item-->
+                        <li class="portfolio-item wordpress design isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/folio09.jpg" alt="">
+                                <h5>Photo</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                                </div>          
+                            </div>           
+                        </li><!--/.portfolio-item-->
+                    </ul>
+                </div>
+			<div id="mapwrapper">
+				<div id="map"></div>
+			</div>
+
+            <section id="contact" class="white">
+                <div class="container">
+                	<div class="gap"></div>
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Kontaktiraj Me</h2>
+                        <hr>
+                    </div>   
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 fade-up">
+                            <h3>Kontakt Informacije</h3>
+                            <p><span class="icon icon-home"></span>Cara Hadrijana 13, Osijek<br/>
+                                <span class="icon icon-phone"></span>031 502 530<br/>
+                                <span class="icon icon-mobile"></span>091 601 3254<br/>
+                                <span class="icon icon-facebook"></span> <a href="#">Niko Jukić</a> <br/>
+                            </p>
+                        </div><!-- col -->
+                    
+                        <div class="col-md-8 fade-up">
+                            <h3>Obratite Mi Se</h3>
+                            <br>
+                            <br>
+                            <div id="message"></div>
+                            <form method="post" action="sendemail.php" id="contactform">
+                                <input type="text" name="name" id="name" placeholder="Ime" />
+                                <input type="text" name="email" id="email" placeholder="Prezime" />
+                                <input type="text" name="website" id="website" placeholder="Email" />
+                                <textarea name="comments" id="comments" placeholder="Komentar"></textarea>
+                            <form>
+                            <input class="btn btn-outlined btn-primary" type="button" value="Pošalji" onclick="window.location.href='sendmail.html'" />
+                            </form>
+                            </form>
+                        </div><!-- col -->
+                    </div><!-- row -->  
+                    <div class="gap"></div>         
+                </div>
+            </section>
+        </div>
+    <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2018 | Sva Prava Sadržana.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>   
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> 
+    <script src="js/init.js"></script>
+</body>
+</html>

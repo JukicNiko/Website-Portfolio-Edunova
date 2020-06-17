@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>O Meni</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <script src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+    'use strict';
+        jQuery('body').backstretch([
+            "images/bg/bg3.jpg"
+        ], {duration: 5000, fade: 0});
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{     
+                latitude:45.557937,
+                longitude: 18.709186,
+            icon: { image: "images/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: { 
+                image: "images/marker.png", 
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:45.557937,
+            longitude: 18.709186,
+            zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+    </div>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><h1>NIKO JUKIC</h1></a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Početna</a></li>
+                    <li><a href="o-meni.html">O Meni</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="kontaktiraj-me.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="single-page-slider">
+        <div class="carousel slide" data-ride="carousel">
+            <div>
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div>
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title">Niko Jukic</h2>
+                                    <hr>
+                                    <p>O MENI</p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="content-wrapper">
+        <section id="about-us" class="white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 fade-up">
+                        <p>Moje ime je Niko, rođen sam u 15.02.2004. godine u Osijeku, mirnom gradu uz rijeku Dravu. Pohađam Isusovačku klasičnu gimnaziju u Osijeku. Nisam baš zaljubljen u većinu predmeta, ali nadam se da ću nakon te škole upisati neki fakultet koji će me voditi ka mojoj jedinoj, pravoj ljubavi- informatici i računalima. Prošle godine upisao sam se u školu informatike, managementa i stranih jezika na tečaj web-dizajna. To mi je otvorilo neke nove vidike, ali i pokazalo koliko moram učiti i biti uporan. Naučio sam sljedeće programske jezike: HTML, CSS, PHP, Java, JavaScript i jQuery, također sam se služio sa Photoshopom i naučio neke osnove u njemu. Web-dizajn mi se jako svidio i mislim se nastaviti baviti njime i nastaviti sa svojim napredovanjem.</p>
+
+                        <p>U slobodno vrijeme družim se s prijateljima, vozim bicikl i skateboard, slušam glazbu i igram igrice na računalu. Većina mojih prijatelja ima iste afinitete te se lako razumijemo. Nisam pretjerani fan društvenih mreža, iako imam profile na Facebooku i  Instagramu. Možda nije najpametnije, ali u virtualnom svijetu mogu "izgubiti" sate i sate igrajući igrice umrežen s igračima diljem svijeta. Najviše volim zimu i skijanje. Već godinama pohađam napredne tečajeve skijanja i uživam u crvenim i crnim stazama. Do sada sam obišao 10-ak različitih skijališta u Francuskoj, Austriji, Italiji, Sloveniji i Švicarskoj. Skateboard mi je druga sportska ljubav.</p>
+                    </div>
+
+                </div>
+            </div>      
+        </section>
+           <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2018 | Sva Prava Sadržana.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer><!--/#footer-->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
